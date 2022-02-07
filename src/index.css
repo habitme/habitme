@@ -5,3 +5,21 @@
 * {
   @apply m-0 p-0 box-border;
 }
+
+#menu > a {
+  @apply relative;
+}
+
+#menu > a::after {
+  content: "";
+  @apply bg-theme absolute left-0 bottom-0 h-0.5 w-0 transition-all;
+}
+
+#menu > a:hover::after {
+  content: "";
+  @apply w-full;
+}
+
+.highlight {
+  @apply text-theme;
+}
